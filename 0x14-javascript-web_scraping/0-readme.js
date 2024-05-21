@@ -4,7 +4,7 @@ const fs = require('fs');
 // import the built-in Node.js 'fs' module.
 
 fs.readFile(process.argv[2], 'utf8', function (error, content) {
- // use fs.readFile() to read the contents of a file specified as a command-line argument
+  // use fs.readFile() to read the contents of a file specified as a command-line argument
   // 'utf8' specifies the encoding of the file read
 
   if (error) {
