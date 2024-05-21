@@ -10,7 +10,7 @@ request(process.argv[2], function (error, response, body) {
     // parse the JSON data and extract the "results" array
     const results = JSON.parse(body).results;
     // Use the 'reduce()' method to iterate through the movies in the 'results' array.
-g   console.log(results.reduce((count, movie) => {
+    console.log(results.reduce((count, movie) => {
       // Check if there is a character with ID 18 ('/18/') in the 'characters' array.
       return movie.characters.find((character) => character.endsWith('/18/'))
         // If a character with ID 18 is found, increment the count by 1.
